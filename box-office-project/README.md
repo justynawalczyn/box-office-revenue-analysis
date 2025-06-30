@@ -21,8 +21,8 @@ This project is a  data analysis of box office performance, enriched with IMDb a
 
  box-office-revenue-insights/
 ├── box_office_analysis.ipynb # Jupyter Notebook
-├── enriched_revenue_data.csv # Final enriched dataset
-├── revenues_per_day.csv # Original box office data
+├── enriched_revenue_data.csv # Final enriched dataset (to download here: https://drive.google.com/drive/folders/1FUdUkno2Ea71GFw0A40pQyTUGSvxQE3E?usp=drive_link)
+├── revenues_per_day.csv # Original box office data (to download here: https://drive.google.com/drive/folders/1FUdUkno2Ea71GFw0A40pQyTUGSvxQE3E?usp=drive_link)
 ├── ERD.pdf # Entity-Relationship Diagram
 ├── dashboard.pdf # Screenshot of Looker Studio dashboard
 └── README.md # This file
