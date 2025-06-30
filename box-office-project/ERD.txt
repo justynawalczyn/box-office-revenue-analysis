@@ -1,0 +1,45 @@
+Table fact_revenue {
+  revenue_id int [pk]
+  movie_id int [ref: > dim_movie.movie_id]
+  distributor_id int [ref: > dim_distributor.distributor_id]
+  date date [ref: > dim_time.date]
+  revenue int
+  theaters int
+}
+
+Table dim_movie {
+  movie_id int [pk]
+  title varchar
+  year int
+  genre varchar
+  director varchar
+  runtime varchar
+  imdb_rating float
+  metascore int
+  box_office varchar
+  awards text
+}
+
+Table dim_distributor {
+  distributor_id int [pk]
+  name varchar
+}
+
+Table dim_time {
+  date date [pk]
+  day int
+  month int
+  year int
+  weekday string
+}
+
+Table dim_actor {
+  actor_id int [pk]
+  name varchar
+}
+
+Table bridge_movie_actor {
+  movie_id int [ref: > dim_movie.movie_id]
+  actor_id int [ref: > dim_actor.actor_id]
+  primary key (movie_id, actor_id)
+}
